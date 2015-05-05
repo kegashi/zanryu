@@ -23,7 +23,8 @@
 
 `http://easyramble.com/mac-automator-shell-script.html`
 
-# サンプルコードの代わりに以下の二行を書き込む
-`cd /Users/kazuki/Documents/zanryu (残留スクリプトの保存場所)`
+サンプルコードの代わりに以下の二行を書き込む
 
-`./zanryu.sh 1>out/out.txt`
+`$ cd /Users/kazuki/Documents/zanryu` (残留スクリプトの保存場所)
+
+`$ ./zanryu.sh 1>out/out.txt`
