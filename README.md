@@ -9,7 +9,7 @@
 ## Change Directory
 `$ cd zanryu`
 
-## `zanryu.sh` に権限を与える
+## `zanryu.sh` に実行権限を与える
 `$ chmod +x zanryu.sh`
 
 ## 設定ファイルを書き加える
@@ -18,13 +18,12 @@
 ## 実行する
 `$ ./zanryu.sh`
 
-## appファイルを作成する
-これを参考にする
+## shellの種類と保存場所に合わせてaliasを設定する
+(zshで/Users/zukky/Documents下に保存した場合)
 
-`http://easyramble.com/mac-automator-shell-script.html`
+`$ echo alias zanryu='/Users/zukky/Documents/zanryu/zanryu.sh'  >> ~/.zshrc`
 
-サンプルコードの代わりに以下の二行を書き込む
+`$ source ~/.zshrc`
 
-`$ cd /Users/kazuki/Documents/zanryu` (残留スクリプトの保存場所)
-
-`$ ./zanryu.sh 1>out/out.txt`
+## 実行する
+`$ zanryu`
