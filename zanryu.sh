@@ -13,7 +13,7 @@ do
 		
 	else
 		sleep 3600
-		./zanryu.sh &
+		./zanryu.sh 1>out/out.txt &
 		break
 
 	fi
