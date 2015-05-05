@@ -1,0 +1,12 @@
+[config]
+name= #ログイン名
+password= #CNSパスワード 
+TelUser= #電話番号
+TelEmergency= #緊急連絡先
+GoHomeTime= #帰宅時間
+Building= #建物番号(Δ=6)
+Floor= #階番号(s103=s1)
+Room= #部屋番号(s103=103)
+Reason= #残留理由(English)
+yc= #研究会ページのURLの中にyc=[文字列]&とあるのでその文字列を入力
+ks= #同じくks=[文字列]&とある
