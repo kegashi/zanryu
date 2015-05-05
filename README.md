@@ -21,7 +21,7 @@
 ## shellの種類と保存場所に合わせてaliasを設定する
 (zshで/Users/zukky/Documents下に保存した場合)
 
-`$ echo alias zanryu='/Users/zukky/Documents/zanryu/zanryu.sh'  >> ~/.zshrc`
+`$ echo alias zanryu=\'/Users/zukky/Documents/zanryu/zanryu.sh\'  >> ~/.zshrc`
 
 `$ source ~/.zshrc`
 
