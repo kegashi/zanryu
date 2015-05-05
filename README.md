@@ -1,19 +1,19 @@
-# $B;DN1%9%/%j%W%H(B
-## $BA[Dj4D6-(B
+# 残留スクリプト
+## 必要環境
 - python
 
-## Git clone `$B;DN1%9%/%j%W%H(B`
+## Git clone `残留スクリプト`
 `$ git clone git@github.com:kegashi/zanryu.git`
 
 
 ## Change Directory
 `$ cd zanryu`
 
-## `zanryu.sh` $B$K8"8B$rM?$($k(B
+## `zanryu.sh` に権限を与える
 `$ chmod +x zanryu.sh`
 
-## $B%3%a%s%H$K=>$$!"@_Dj%U%!%$%k$rJQ99$9$k(B
+## 設定ファイルを書き加える
 `$ vim config.txt`
 
-## $B%9%/%j%W%H$r<B9T$9$k(B
+## 実行する
 `$ ./zanryu.sh`

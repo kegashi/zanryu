@@ -1,12 +1,12 @@
 [config]
-name= #$B%m%0%$%sL>(B
-password= #CNS$B%Q%9%o!<%I(B 
-TelUser= #$BEEOCHV9f(B
-TelEmergency= #$B6[5^O"Mm@h(B
-GoHomeTime= #$B5"Bp;~4V(B
-Building= #$B7zJ*HV9f(B($B&$(B=6)
-Floor= #$B3,HV9f(B(s103=s1)
-Room= #$BIt20HV9f(B(s103=103)
-Reason= #$B;DN1M}M3(B(English)
-yc= #$B8&5f2q%Z!<%8$N(BURL$B$NCf$K(Byc=[$BJ8;zNs(B]&$B$H$"$k$N$G$=$NJ8;zNs$rF~NO(B
-ks= #$BF1$8$/(Bks=[$BJ8;zNs(B]&$B$H$"$k(B
+name= #ログイン名
+password= #CNSパスワード
+TelUser= #電話番号
+TelEmergency= #緊急連絡先
+GoHomeTime= #帰宅時間
+Building= #建物番号(Δ=6)
+Floor= #階番号(s103=s1)
+Room= #部屋番号(s103=103)
+Reason= #残留理由(English)
+yc= #SFSの研究室の授業ぺージのURLにyc=[文字列]&とあるので文字列を入れる
+ks= #同じくks=[文字列]&を探す

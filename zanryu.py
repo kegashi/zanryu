@@ -13,7 +13,7 @@ from urllib2 import HTTPError
 
 def Regist(name, password, teluser, telemergency, gohometime, building, floor, room, reason, yc, ks):
 
-	#$B%m%0%$%s$9$k(B
+	#SFSにログインする
 	print "SFC login(1of3)"
 	browser = mechanize.Browser()
 	browser.set_handle_robots(False)
@@ -29,7 +29,7 @@ def Regist(name, password, teluser, telemergency, gohometime, building, floor, r
 	f.write(str(res.read()))
 	f.close()
 
-	#$B<x6HMQ%Z!<%8$XHt$V(B
+	#研究室のページに移動
 	print "Lab page(2of3)"
 	browser.open('https://vu9.sfc.keio.ac.jp/sfc-sfs/sfs_class/student/s_class_top.cgi?lang=ja&ks=%s&yc=%s&id=%s'% (ks, yc, encodeID))
 	browser.select_form(nr=0)
@@ -38,7 +38,7 @@ def Regist(name, password, teluser, telemergency, gohometime, building, floor, r
 	f.write(str(res.read()))
 	f.close()
 	
-	#$B;DN1EPO?%U%)!<%`$rF~NO$9$k(B
+	#登録する
 	print "Registration(3of3)"
 	browser.select_form(nr=0)
 	browser.form['stay_phone'] = teluser
@@ -57,12 +57,12 @@ if __name__=='__main__':
 
 	print "Zanryu System is started."
 
-	#config.txt$B$NCM$r<hF@$9$k(B
+	#config.txtを読み込む
 	config = ConfigParser.SafeConfigParser()
 	config.read([os.path.expanduser('config.txt')])
 	
 
-	#$BEPO?$9$k(B
+	#登録する
 	Regist(
 		config.get('config', 'name'),
 		config.get('config', 'password'),
