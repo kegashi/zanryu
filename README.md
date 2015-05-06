@@ -16,12 +16,12 @@
 `$ vim config.txt`
 
 ## 実行する
-`$ ./zanryu.sh`
+`$ ./zanryu`
 
 ## shellの種類と保存場所に合わせてPATHを設定する
 (zshで/Users/zukky/Documents下に保存した場合)
 
-`$ echo "export PATH=/Users/kazuki/Documents/python/zanryu:\$PATH"  >> ~/.zshrc`
+`$ echo "export PATH=/Users/zukky/Documents/zanryu:\$PATH"  >> ~/.zshrc`
 
 `$ source ~/.zshrc`
 
