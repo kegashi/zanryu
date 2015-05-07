@@ -25,7 +25,8 @@ def Regist(name, password, teluser, telemergency, gohometime, building, floor, r
 	loginURL = res.geturl().split('&')
 	loginID = loginURL[1].split('=')
 	encodeID = loginID[1]
-	f = open('out/out.html', 'w')
+	conf = os.path.join(os.path.dirname(__file__),'out/out.html')
+	f = open(conf, 'w')
 	f.write(str(res.read()))
 	f.close()
 
@@ -34,7 +35,8 @@ def Regist(name, password, teluser, telemergency, gohometime, building, floor, r
 	browser.open('https://vu9.sfc.keio.ac.jp/sfc-sfs/sfs_class/student/s_class_top.cgi?lang=ja&ks=%s&yc=%s&id=%s'% (ks, yc, encodeID))
 	browser.select_form(nr=0)
 	res = browser.submit()
-	f = open('out/out2.html', 'w')
+	conf = os.path.join(os.path.dirname(__file__),'out/out2.html')
+	f = open(conf, 'w')
 	f.write(str(res.read()))
 	f.close()
 	
@@ -49,7 +51,8 @@ def Regist(name, password, teluser, telemergency, gohometime, building, floor, r
 	browser.form['stay_room_other'] = room
 	browser.form['stay_reason'] = reason
 	res = browser.submit()
-	f = open('out/index.html', 'w')
+	conf = os.path.join(os.path.dirname(__file__),'out/index.html')
+	f = open(conf, 'w')
 	f.write(str(res.read()))
 	f.close()
 
@@ -59,7 +62,8 @@ if __name__=='__main__':
 
 	#config.txtを読み込む
 	config = ConfigParser.SafeConfigParser()
-	config.read([os.path.expanduser('config.txt')])
+	conf = os.path.join(os.path.dirname(__file__),'config.txt')
+	config.read([os.path.expanduser(conf)])
 	
 
 	#登録する

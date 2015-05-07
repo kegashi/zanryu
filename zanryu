@@ -8,12 +8,12 @@ do
 
 	if test ${res} -gt 17 -a ${res} -lt 23 ; then
 		echo "start zanryu.py"
-		python /Users/kazuki/Documents/python/zanryu/zanryu.py
+		python `dirname $0`/zanryu.py
 		break
 		
 	else
 		sleep 3600
-		/Users/kazuki/Documents/python/zanryu/zanryu.sh 1>out/out.txt &
+		zanryu 1>>out/out.txt &
 		break
 
 	fi
