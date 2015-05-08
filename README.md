@@ -15,10 +15,7 @@
 ## 設定ファイルを書き加える
 `$ vim config.txt`
 
-## 実行する
-`$ ./zanryu`
-
-## shellの種類と保存場所に合わせてPATHを設定する
+## shellの種類と保存場所に合わせてPATHを通す
 (zshで/Users/zukky/Documents下に保存した場合)
 
 `$ echo "export PATH=/Users/zukky/Documents/zanryu:\$PATH"  >> ~/.zshrc`
