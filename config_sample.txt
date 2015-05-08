@@ -1,0 +1,12 @@
+[config]
+name=t12345as
+password=PassW0rd
+TelUser=08012345678
+TelEmergency=09055556666
+GoHomeTime=17:00
+Building=6
+Floor=s1
+Room=103
+Reason=Thesis research
+yc=2015_27339
+ks=00102
