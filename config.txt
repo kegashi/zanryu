@@ -1,12 +1,12 @@
 [config]
-name= #ログイン名
-password= #CNSパスワード
-TelUser= #電話番号
-TelEmergency= #緊急連絡先
-GoHomeTime= #帰宅時間
-Building= #建物番号(Δ=6)
-Floor= #階番号(s103=s1)
-Room= #部屋番号(s103=103)
-Reason= #残留理由(English)
-yc= #SFSの研究室の授業ぺージのURLにyc=[文字列]&とあるので文字列を入れる
-ks= #同じくks=[文字列]&を探す
+name=#ログイン名(例:t12345ab)
+password=#CNSパスワード(例:PassW0rd)
+TelUser=#電話番号(例:0801234567)
+TelEmergency=#緊急連絡先(例:08098765432)
+GoHomeTime=#帰宅時刻(例:17:00)
+Building=#建物番号(Δ館の場合:6)
+Floor=#階番号(Δs103の場合:s1)
+Room=#部屋番号(Δs103の場合:103)
+Reason=#残留理由(例:Thesis research)
+yc=#SFSの研究室の授業ページのURLにyc=[文字列]&とあるので文字列を入れる
+ks=#同じくks=[文字列]&を探す

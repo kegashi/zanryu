@@ -3,7 +3,7 @@
 - python
 
 ## Git clone `残留スクリプト`
-`$ git clone git@github.com:kegashi/zanryu.git`
+`$ git clone https://github.com:kegashi/zanryu.git`
 
 
 ## Change Directory
