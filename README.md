@@ -5,6 +5,8 @@
 ## Git clone `残留スクリプト`
 `$ git clone https://github.com:kegashi/zanryu.git`
 
+## import `mechanize`
+`$ pip install mechanize`
 
 ## Change Directory
 `$ cd zanryu`
